@@ -1,0 +1,23 @@
+.Card {
+    width: 30%;
+    background-color: #fff;
+    margin: 15px;
+    padding: 30px;
+    text-align: center;
+    border: 1px solid lightgray;
+    border-radius: 20px;
+    
+}
+
+.title{
+    margin-bottom: 20px;
+    font-size: 1.3em;
+    font-weight: bold;
+    
+}
+
+.info{
+    font-size: 0.9em; 
+    font-family: 'Times New Roman', Times, serif; 
+    margin: 10px;
+}

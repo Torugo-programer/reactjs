@@ -1,0 +1,40 @@
+header {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    background-color: var(--PrimaryColor);
+}
+
+nav {
+    display: flex;
+    width: calc(100% - 3em);
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;   
+}
+
+ul li {
+    margin: 15px;
+    font-size: 1.3em;
+    cursor: pointer;
+    transition: .3s;
+}
+
+ul li:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    margin: 20px;
+    font-size: 2em;
+    cursor: pointer;
+}
