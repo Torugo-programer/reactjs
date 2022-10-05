@@ -12,9 +12,12 @@ const Header = () => {
             if (theme === 'lightTheme') {
                 setTheme('darkTheme')
                 layout.classList = 'layout lightTheme'
+                document.documentElement.style.setProperty('--darkTheme', '#222')
             } else {
                 setTheme('lightTheme')
-                layout.classList = 'layout lightTheme'
+                layout.classList = 'layout darkTheme'
+                document.documentElement.style.setProperty('--lightTheme', '#eee')
+                
             }
         })
     })
@@ -48,9 +51,8 @@ const Header = () => {
                     <li>Contato</li>
                 </ul> 
             </nav>
-            <button className="btn_theme">Tema: {
-                theme === 'lightTheme' ? 'darkTheme' : 'lightTheme'
-                theme === 'darkTheme' ? 'lightTheme' : 'darkTheme'
+            <button className="btn_theme">Mudar para: {
+                theme === 'lightTheme' ? 'lightTheme' : 'darkTheme' 
             }
             </button>
         </header>
