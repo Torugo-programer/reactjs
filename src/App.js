@@ -1,13 +1,17 @@
-import Header from "./components/Header";
-import Sobre from "./components/Sobre";
+import React from "react";
+import { BrowserRouter, Route, Routes} from "react-router-dom";
 import './css/global.css'
+import Contato from "./pages/Contato";
+import Home from "./pages/Home";
 
 const App = () => {
   return(
-    <>
-      <Header />
-      <Sobre />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />   
+        <Route path="/contato" element={<Contato />} />   
+      </Routes>
+    </BrowserRouter>
   )
 }
 

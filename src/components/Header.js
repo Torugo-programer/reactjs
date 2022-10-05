@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import '../css/Header.css'
 
 const Header = () => {
@@ -11,48 +12,29 @@ const Header = () => {
         btn_theme.addEventListener('click', () => {
             if (theme === 'lightTheme') {
                 setTheme('darkTheme')
-                layout.classList = 'layout lightTheme'
+                layout.classList = 'layout darkTheme'
                 document.documentElement.style.setProperty('--darkTheme', '#222')
             } else {
                 setTheme('lightTheme')
-                layout.classList = 'layout darkTheme'
+                layout.classList = 'layout lightTheme'
                 document.documentElement.style.setProperty('--lightTheme', '#eee')
                 
             }
         })
     })
 
-
-
-    // setTheme('darkTheme')
-    //  theme = lightTheme
-    //  ...
-    //  theme = darkTheme
-
-    // console.log(state) // output: asd
-
-    // func() { let arr = [val, val2]; return arr }
-    //
-    // func()[0] = val
-    // func()[1] = val2
-    //
-    // Destructing Array
-    //
-    // [] = ()
-    // [ value [0], setValue [1] ] = func()
-
     return(
         <header>
             <nav>
                 <div className="logo">Cajuzão</div>
                 <ul>
-                    <li>Produtos</li>
-                    <li>Serviços</li>
-                    <li>Contato</li>
+                    <Link to={'/produtos'}> <li>Produtos</li></Link>
+                    <Link to={'/servicos'}> <li>Serviços</li></Link>
+                    <Link to={'/contato'}> <li>Contato</li></Link>
                 </ul> 
             </nav>
-            <button className="btn_theme">Mudar para: {
-                theme === 'lightTheme' ? 'lightTheme' : 'darkTheme' 
+            <button className="btn_theme">{
+                theme === 'lightTheme' ? 'Tema Claro' : 'Tema Escuro' 
             }
             </button>
         </header>

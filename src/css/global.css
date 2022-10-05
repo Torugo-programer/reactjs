@@ -2,7 +2,7 @@
     --PrimaryColor: #72cbdf;
     --BackgroundColor: #eee;
     --darkTheme: #222;
-    --Color: color(#222);
+    --FontColor: #222;
     --lightTheme: #eee;
 }
 
@@ -16,4 +16,9 @@
 body {
     height: 100vh;
     width: 100vw;
+}
+
+a {
+    text-decoration: none;
+    color: var(--FontColor)
 }

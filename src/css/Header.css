@@ -38,3 +38,14 @@ ul li:hover {
     font-size: 2em;
     cursor: pointer;
 }
+
+.btn_theme{
+    border-radius: 25px;
+    background-color: white;
+    border: 7px;
+    padding: 2px;
+    cursor: pointer;
+    margin-right: 20px;
+    width: 100px;
+    
+}

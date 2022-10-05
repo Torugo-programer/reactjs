@@ -11,6 +11,9 @@ export default function Sobre() {
         <Card title="Clientes" info="
             Todo cliente é bem-vindo e deve ser respeitado.
         "/>
+        <Card title="Ofertas?" info="
+            Sim, nós temos ofertas, acesse a aba ofertas localizada na parte superior do site.
+        "/>
     </Layout>
   )
 }
