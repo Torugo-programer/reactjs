@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import '../css/Header.css'
-import Home from "../pages/Home";
 
 const Header = () => {
 
@@ -22,22 +21,13 @@ const Header = () => {
                 
             }
         })
-            const logo = document.querySelector('.logo')
-            logo.addEventListener('click', () => {
-                if (logo === 'click'){ 
-                    <Home path="/" />
-                    
-                } else{
-                        <Home path="/" />
-                }
-                
-            })
-        })
+            
+    })
 
     return(
         <header>
             <nav>
-                <div className="logo">Cajuzão</div>
+                <Link to= "/"><div className="logo">Cajuzão</div></Link>
                 <ul>
                     <Link to={'/produtos'}> <li>Produtos</li></Link>
                     <Link to={'/servicos'}> <li>Serviços</li></Link>
