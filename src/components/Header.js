@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import '../css/Header.css'
+import Home from "../pages/Home";
 
 const Header = () => {
 
@@ -21,7 +22,17 @@ const Header = () => {
                 
             }
         })
-    })
+            const logo = document.querySelector('.logo')
+            logo.addEventListener('click', () => {
+                if (logo === 'click'){ 
+                    <Home path="/" />
+                    
+                } else{
+                        <Home path="/" />
+                }
+                
+            })
+        })
 
     return(
         <header>
@@ -42,4 +53,4 @@ const Header = () => {
 }
 
 
-export default Header
+export default Header;

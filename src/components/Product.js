@@ -2,12 +2,12 @@ import React from "react";
 import Layout from "../layout";
 import Card from "./Card";
 
-const Contact = () => {
+const Product = () => {
     return(
         <Layout>
-            <Card title="Contato" info="Esta é a página contato" />
+            <Card title= "Produtos" info= "Os produtos estão aqui dentro"/>
         </Layout>
     )
 }
 
-export default Contact;
+export default Product;
