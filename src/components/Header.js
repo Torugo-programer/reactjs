@@ -42,5 +42,7 @@ const Header = () => {
     )
 }
 
+//arrumar o tema claro e escuro, para que na hora de trocar a tela, continue no tema que estava (escuro).
+
 
 export default Header;
