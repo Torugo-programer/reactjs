@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
+import { themeContext } from '../UserContext'
 import './Layout.css'
 
 const Layout = props => {
-    return (
-        <div className="layout lightTheme">
+    const { theme } = useContext(themeContext)
+
+    return(
+        <div className={`layout ${theme}`}>
             {props.children}
         </div>
     )
